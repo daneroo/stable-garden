@@ -1,12 +1,20 @@
-# Stable Difusion on Mac M1
+# Stable Diffusion on Mac M1
 
-- Update dotfiles to addd python@2.10 and virtualenv
+- Update dotfiles to add python@2.10 and virtualenv
 
 ## Trying things out
 
- - `--seed $RANDOM`
- - `--n_samples` : number of images in a batch
- - `--ddim_steps` : 50 default, not sure, 50 timesteps?
+- `--seed $RANDOM`
+- `--from-file`: prompts from a file (one per line?)
+- `--skip_grid`: outputs ony in `outputs/txt2img-samples/samples/`
+- [x] `--n_samples` : number of images in a batch, doesn't work well, might as well loop
+- [x] `--ddim_steps` : 50 default, not sure, 50 timesteps? 60 does not work
+- [x] `--W` and `--H` : even 768 squared seems too much
+
+```bash
+time python scripts/txt2img.py --from-file ../prompts/prompt-1.txt --skip_grid --n_samples 1 --n_iter 1 --plms --seed $RANDOM
+```
+
 ## Setup
 
 ```bash
