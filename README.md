@@ -7,12 +7,25 @@
 - `--seed $RANDOM`
 - `--from-file`: prompts from a file (one per line?)
 - `--skip_grid`: outputs ony in `outputs/txt2img-samples/samples/`
+- `--f`: downsampling factor
 - [x] `--n_samples` : number of images in a batch, doesn't work well, might as well loop
 - [x] `--ddim_steps` : 50 default, not sure, 50 timesteps? 60 does not work
 - [x] `--W` and `--H` : even 768 squared seems too much
 
 ```bash
 time python scripts/txt2img.py --from-file ../prompts/prompt-1.txt --skip_grid --n_samples 1 --n_iter 1 --plms --seed $RANDOM
+```
+
+### Tone down warning
+
+```python
+# Add this to txt2img.py
+#-------------------
+# Tone down "Some weights of the model checkpoint ..."
+from transformers import logging
+# logging.set_verbosity_warning()
+logging.set_verbosity_error()
+#-------------------
 ```
 
 ## Setup
@@ -44,3 +57,4 @@ python scripts/txt2img.py \
 ## References
 
 - [Stable Diffusion on M1](https://replicate.com/blog/run-stable-diffusion-on-m1-mac)
+- [imaginAIry](https://github.com/brycedrennan/imaginAIry)
