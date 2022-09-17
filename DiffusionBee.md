@@ -1,5 +1,9 @@
 # DiffusionBee Prompts
 
+## adirondack
+
+- a cyberpunk woman with a red fleece jacket sitting in an Adirondack chair by the fire at night
+
 ## poodlilupus
 
 - A brown poodle becoming a werewolf.  Bright Full moon. Impressionist Painting
