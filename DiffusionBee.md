@@ -2,7 +2,11 @@
 
 ## adirondack
 
-- a cyberpunk woman with a red fleece jacket sitting in an Adirondack chair by the fire at night
+- a silver haired cyberpunk woman with a red fleece jacket sitting in an Adirondack chair by the fire.
+ At night. Impressionist painting
+- a silver haired cyberpunk woman with a red fleece jacket sitting in an Adirondack chair by the fire.
+ At night. Impressionist painting
+- Late at night, with a star filled sky, a silver haired cyberpunk woman with a red fleece jacket sitting in an Adirondack chair by the fire.
 
 ## poodlilupus
 
