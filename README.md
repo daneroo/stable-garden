@@ -13,7 +13,10 @@
 - [x] `--W` and `--H` : even 768 squared seems too much
 
 ```bash
+cd stable-diffusion
+source venv/bin/activate
 time python scripts/txt2img.py --from-file ../prompts/prompt-1.txt --skip_grid --n_samples 1 --n_iter 1 --plms --seed $RANDOM
+mv outputs/txt2img-samples/samples "../output/samples-$(date +samples-%Y-%m-%dT%H.%M.%S)"
 ```
 
 ### Tone down warning
@@ -56,5 +59,6 @@ python scripts/txt2img.py \
 
 ## References
 
+- [Repo](https://github.com/bfirsh/stable-diffusion.git)
 - [Stable Diffusion on M1](https://replicate.com/blog/run-stable-diffusion-on-m1-mac)
 - [imaginAIry](https://github.com/brycedrennan/imaginAIry)
